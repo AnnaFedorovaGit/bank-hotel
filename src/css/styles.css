@@ -1,12 +1,13 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
 @import url('./reset.css');
-@import url('./vite-promo.css');
+
 @import url('./header.css');
+@import url('./about-block.css');
+@import url('./rooms-block.css');
+@import url('./facilities-block.css');
+@import url('./best-apartments-block.css');
+@import url('./gallery-block.css');
+@import url('./get-in-touch-block.css');
+@import url('./footer.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
