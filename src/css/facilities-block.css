@@ -1,0 +1,132 @@
+.facilities-block {
+  padding-bottom: 20px;
+}
+
+.facilities-block__title-wrapper {
+  position: relative;
+}
+
+.facilities-block__subject {
+  position: absolute;
+  left: 167px;
+  width: 112px;
+  color: var(--primary-dark-color);
+  text-align: right;
+  font-size: 16px;
+  line-height: 130%;
+  text-transform: capitalize;
+}
+
+@media (min-width: 375px) {
+  .facilities-block__subject {
+    left: 221px;
+  }
+}
+
+.facilities-block__title-two {
+  color: var(--primary-dark-color);
+  padding-left: 63px;
+}
+
+.facilities-block__third-row {
+  padding-left: 79px;
+}
+
+.facilities-block__icon {
+  position: absolute;
+  bottom: 6px;
+  left: 95px;
+}
+.facilities-block__picture-wrapper {
+  margin: 50px auto 50px auto;
+  width: 192px;
+}
+
+.facilities-block__text-wrapper {
+  width: 221px;
+  margin-left: auto;
+  margin-bottom: 70px;
+}
+
+.facilities-block__text {
+  line-height: 170%;
+  font-size: 13px;
+  color: var(--primary-dark-color);
+}
+
+.facilities-block__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.facilities-block__item-inactive {
+  margin-bottom: 50px;
+}
+
+/* .facilities-block__item-inactive:last-child {
+  padding-top: 50px;
+} */
+
+.facilities-block__item-active {
+  margin-bottom: 70px;
+}
+
+.facilities-block__item-active_image {
+  margin-bottom: 50px;
+}
+
+.facilities-block__item-inactive_image {
+  margin-bottom: 40px;
+}
+
+.facilities-block__description-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.facilities-block__pagination {
+  color: var(--primary-dark-color);
+  font-family: 'Yeseva One', serif;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.facilities-block__item-active_pagination {
+  margin-bottom: 58px;
+}
+
+.facilities-block__item-inactive_pagination {
+  position: absolute;
+  right: 0;
+}
+
+.facilities-block__control {
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.facilities-block__inner-right {
+  width: 223px;
+}
+
+.facilities-block__title-three {
+  color: var(--primary-dark-color);
+}
+
+.facilities-block__item-active_title-three {
+  margin-bottom: 20px;
+}
+
+.facilities-block__item-inactive_title-three {
+  font-size: 24px;
+}
+
+.facilities-block__dark-vector {
+  margin-bottom: 50px;
+}
