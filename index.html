@@ -5,28 +5,76 @@
     <link rel="icon" type="image/svg+xml" href="/bank-hotel/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bank hotel</title>
-    
-    <!--  -->
-
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&family=Yeseva+One&display=swap"
       rel="stylesheet"
-    /> -->
-
-    <!-- <link
+    />
+    <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    /> -->
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    
     <script type="module" crossorigin src="/bank-hotel/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/bank-hotel/assets/index-2fb707ca.css">
+    <link rel="stylesheet" href="/bank-hotel/assets/index-c62d8b08.css">
   </head>
   <body>
     <header class="header">
+  <div class="container">
+    <nav class="header__nav">
+      <a class="header__logo" href="./index.html">BankHotel</a>
+      <!-- Mobile button: -->
+      <div class="header__mobile-menu">
+        <!-- <button
+          class="header__button-menu"
+          aria-expanded="false"
+          type="button"
+          aria-controls="mobile-menu"
+        > -->
+        <button
+          class="header__button"
+          aria-expanded="false"
+          type="button"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header__icon" width="37" height="10">
+            <use href="/bank-hotel/assets/icons-99ef125f.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- <ul class="pagination-menu list">
+        <li class="item">
+          <a class="pagination-item link active" href="./index.html">Studio</a>
+        </li>
+        <li class="item">
+          <a class="pagination-item link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="item">
+          <a class="pagination-item link" href="">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+
+    <address class="nav-contacts">
+      <ul class="contacts-menu list">
+        <li class="pag-item">
+          <a class="contacts-item link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="pag-item">
+          <a class="contacts-item link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+      </ul>
+    </address>
+  </div>
+</header> -->
+
+      <!-- <header class="header">
   <nav class="nav">
     <ul class="nav-list">
       <li class="nav-item">
@@ -38,63 +86,368 @@
       </li>
     </ul>
   </nav>
+</header> -->
+    </nav>
+  </div>
 </header>
 
     <main>
       <section class="top-block">
   <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
+    <h1 class="top-block__title">
+      Bank<span class="top-block__title_yellow">Hotel</span>
+    </h1>
+    <p class="top-block__list">
+      rooms // restaurant // congress hall // wine bar
+    </p>
+    <div class="top-block__vector-wrapper">
+      <div class="top-block__vector"></div>
     </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
+    <p class="top-block__description">
+      The luxurious hotel in the most beautiful European city with an exclusive
+      restaurant, conference-hall, and art-bar.
+    </p>
+    <div class="top-block__image-wrapper">
       <img
-        class="pic"
-        src="/bank-hotel/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
+        class="top-block__image"
+        srcset="/bank-hotel/assets/image-top-b2b2c0d3.jpg 1x, /bank-hotel/assets/image-top@2x-8dd01fca.jpg 2x"
+        src="/bank-hotel/assets/image-top-b2b2c0d3.jpg"
+        alt="A modern light hotel room"
+        width="355"
+        height="425"
       />
+      <button class="button" type="button">
+        <svg class="top-block__button_icon" width="120" height="120">
+          <use href="/bank-hotel/assets/icons-99ef125f.svg#icon-yellow-circle"></use>
+        </svg>
+        <p class="button_text">Book room</p>
+      </button>
+    </div>
+    <p class="top-block__text">
+      Art & Congress<br /><span class="top-block__text-italic">hall</span>
+    </p>
+  </div>
+</section>
+
+      <section class="about-block">
+  <div class="about-block__container container">
+    <!-- srcset="./img/image-about.jpg 1x, ./img/image-about@2x.jpg 2x" -->
+    <img
+      class="about-block__vector"
+      src="/bank-hotel/assets/vector-group-b61eb849.png"
+      alt="A modern light hotel room"
+      width="355"
+      height="404"
+    />
+    <h2 class="about-block__title-two">About<br />us</h2>
+    <img
+      class="about-block__image"
+      srcset="/bank-hotel/assets/image-about-c84728e0.jpg 1x, /bank-hotel/assets/image-about@2x-44c2c572.jpg 2x"
+      src="/bank-hotel/assets/image-about-c84728e0.jpg"
+      alt="A modern light hotel room"
+      width="355"
+      height="355"
+    />
+    <div class="about-block__wrapper">
+      <h3 class="about-block__title-three">High Quality</h3>
+      <svg class="about-block__icon" width="70" height="50">
+        <use href="/bank-hotel/assets/icons-99ef125f.svg#icon-label"></use>
+      </svg>
+      <p class="about-block__text">
+        The hotel was reopened to visitors in 2016. The building was renovated
+        and modernized to meet the expectations of the most demanding guests. We
+        offer luxurious rooms, numerous facilities, and exceptional service. The
+        hotel is located near the city center, which makes it the best option
+        for those who travel for business and travel purposes.
+      </p>
     </div>
   </div>
 </section>
 
-      
-      
-      
-      
-      
+      <section class="rooms-block">
+  <div class="container">
+    <p class="rooms-block__caption">70 Rooms</p>
+    <h2 class="rooms-block__title-two">Rooms & apartments</h2>
+    <p class="rooms-block__subject">
+      All room decoration was made with ecological certified and safe materials.
+    </p>
+    <div class="rooms-block__image-wrapper">
+      <img
+        class="rooms-block__image"
+        srcset="/bank-hotel/assets/image-rooms-8ec172a7.jpg 1x, /bank-hotel/assets/image-rooms@2x-0f80b2ec.jpg 2x"
+        src="/bank-hotel/assets/image-rooms-8ec172a7.jpg"
+        alt="A modern light hotel room"
+        width="355"
+        height="425"
+      />
+      <button class="button" type="button">
+        <svg class="rooms-block__button_icon" width="120" height="120">
+          <use href="/bank-hotel/assets/icons-99ef125f.svg#icon-yellow-circle"></use>
+        </svg>
+        <p class="button_text">Book room</p>
+      </button>
+    </div>
+    <div class="rooms-block__slider">
+      <p class="rooms-block__slider_pagination">01 / 04</p>
+      <h3 class="rooms-block__title-three">Superior twin</h3>
+      <div class="rooms-block__slider_wrapper">
+        <button class="rooms-block__slider_control" type="button">
+          <svg class="rooms-block__slider_icon" width="70" height="70">
+            <use href="/bank-hotel/assets/icons-99ef125f.svg#icon-button-default"></use>
+          </svg>
+        </button>
+        <p class="rooms-block__text">
+          The Superior twin is perfect for those who plan to stay long. The
+          spacious and bright room is equipped with deluxe Italian furniture and
+          has a beautiful view to the historical part of the city. Stylish
+          interior design and comfortable beds will make your stay cozy and
+          pleasant.
+        </p>
+      </div>
+    </div>
+    <div class="dark-vector"></div>
+  </div>
+</section>
+
+      <section class="facilities-block">
+  <div class="container">
+    <div class="facilities-block__title-wrapper">
+      <p class="facilities-block__subject">Art & Congress halls</p>
+      <h2 class="facilities-block__title-two">
+        Our<br />faci<br /><span class="facilities-block__third-row"
+          >lities</span
+        >
+      </h2>
+      <svg class="facilities-block__icon" width="50" height="50">
+        <use href="/bank-hotel/assets/icons-99ef125f.svg#icon-star"></use>
+      </svg>
+    </div>
+    <div class="facilities-block__picture-wrapper">
+      <img
+        class="facilities-block__picture"
+        srcset="/bank-hotel/assets/image-facil-main-28d51084.jpg 1x, /bank-hotel/assets/image-facil-main@2x-88350828.jpg 2x"
+        src="/bank-hotel/assets/image-facil-main-28d51084.jpg"
+        alt="A modern light hotel room"
+        width="192"
+        height="124"
+      />
+    </div>
+    <div class="facilities-block__text-wrapper">
+      <p class="facilities-block__text">
+        Bank Hotel offers you a wide range of additional services and
+        facilities. Visit our restaurant to try exclusive meals, book a
+        conference hall to organize a business meeting, or relax in the art-bar.
+      </p>
+    </div>
+    <ul class="facilities-block__facilities-list">
+      <!-- active facility mark-up: -->
+      <li class="facilities-block__item facilities-block__item-active">
+        <img
+          class="facilities-block__item-active_image"
+          srcset="/bank-hotel/assets/image-restaurant-1bde52b0.jpg 1x, /bank-hotel/assets/image-restaurant@2x-327fd73b.jpg 2x"
+          src="/bank-hotel/assets/image-restaurant-1bde52b0.jpg"
+          alt="A modern light hotel room"
+          width="355"
+          height="425"
+        />
+        <div class="facilities-block__description-wrapper">
+          <div class="facilities-block__inner-left">
+            <p
+              class="facilities-block__pagination facilities-block__item-active_pagination"
+            >
+              01
+            </p>
+            <button class="facilities-block__control" type="button">
+              <svg class="facilities-block__icon-button" width="70" height="70">
+                <use href="/bank-hotel/assets/icons-99ef125f.svg#icon-button-default"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="facilities-block__inner-right">
+            <h3
+              class="facilities-block__title-three facilities-block__item-active_title-three"
+            >
+              Ice<br />restaurant
+            </h3>
+            <p class="facilities-block__text">
+              The hotel’s exclusive infrastructure is complemented by the unique
+              atmosphere of the Safe Restaurant. Author’s menu, extensive wine
+              card, and live music will set you for the correct mood.
+            </p>
+          </div>
+        </div>
+      </li>
+      <!-- NOT active facility mark-up: -->
+      <li class="facilities-block__item facilities-block__item-inactive">
+        <img
+          class="facilities-block__item-inactive_image"
+          srcset="/bank-hotel/assets/image-hall-4d353994.jpg 1x, /bank-hotel/assets/image-hall@2x-64d3f13e.jpg 2x"
+          src="/bank-hotel/assets/image-hall-4d353994.jpg"
+          alt="A modern light hotel room"
+          width="150"
+          height="150"
+        />
+        <p
+          class="facilities-block__pagination facilities-block__item-inactive_pagination"
+        >
+          02
+        </p>
+        <h3
+          class="facilities-block__title-three facilities-block__item-inactive_title-three"
+        >
+          conference hall
+        </h3>
+      </li>
+      <div class="facilities-block__dark-vector dark-vector"></div>
+      <!-- NOT active facility mark-up: -->
+      <li class="facilities-block__item facilities-block__item-inactive">
+        <img
+          class="facilities-block__item-inactive_image"
+          srcset="/bank-hotel/assets/image-bar-028ffccb.jpg 1x, /bank-hotel/assets/image-bar@2x-8f6238cc.jpg 2x"
+          src="/bank-hotel/assets/image-bar-028ffccb.jpg"
+          alt="A modern light hotel room"
+          width="150"
+          height="150"
+        />
+        <p
+          class="facilities-block__pagination facilities-block__item-inactive_pagination"
+        >
+          03
+        </p>
+        <h3
+          class="facilities-block__title-three facilities-block__item-inactive_title-three"
+        >
+          Wine bar “reserve”
+        </h3>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="apartments-block">
+  <div class="apartments-block__container container">
+    <h2 class="apartments-block__title-two">Best apartments</h2>
+    <div class="apartments-block__caption-wrapper">
+      <p class="apartments-block__caption">
+        All room decoration was made with ecological certified and safe
+        materials.
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section class="gallery-block">
+  <div class="container">
+    <div class="gallery-block__title-wrapper">
+      <svg class="gallery-block__icon" width="70" height="50">
+        <use href="/bank-hotel/assets/icons-99ef125f.svg#icon-label"></use>
+      </svg>
+      <h2 class="gallery-block__title-two">our<br />Gallery</h2>
+    </div>
+    <p class="gallery-block__text">
+      Explore our spacious rooms with the gorgeous view to the historical part
+      of the city. Each room has an exclusive interior design decorated with
+      modern art pieces that will make your stay unforgettable.
+    </p>
+    <div class="gallery-block__images-wrapper">
+      <div class="gallery-block__images-inner">
+        <img
+          class="gallery-block__image"
+          srcset="/bank-hotel/assets/image-about-c84728e0.jpg 1x, /bank-hotel/assets/image-about@2x-44c2c572.jpg 2x"
+          src="/bank-hotel/assets/image-about-c84728e0.jpg"
+          alt="A modern light hotel room"
+          width="152"
+          height="206"
+        />
+        <img
+          class="gallery-block__image gallery-block__image-gray-one"
+          srcset="/bank-hotel/assets/image-gray-02-c2460337.png 1x, /bank-hotel/assets/image-gray-02@2x-5331a3d9.png 2x"
+          src="/bank-hotel/assets/image-gray-02-c2460337.png"
+          alt="A modern light hotel room"
+          width="220"
+          height="147"
+        />
+      </div>
+      <img
+        class="gallery-block__image gallery-block__image-gray-two"
+        srcset="/bank-hotel/assets/image-gray-01-e8adc508.png 1x, /bank-hotel/assets/image-gray-01@2x-6c1c3ab1.png 2x"
+        src="/bank-hotel/assets/image-gray-01-e8adc508.png"
+        alt="A modern light hotel room"
+        width="218"
+        height="140"
+      />
+      <img
+        class="gallery-block__image gallery-block__image-top"
+        srcset="/bank-hotel/assets/image-gallery-2-dacc9269.jpg 1x, /bank-hotel/assets/image-gallery-2@2x-a6d30b60.jpg 2x"
+        src="/bank-hotel/assets/image-gallery-2-dacc9269.jpg"
+        alt="A modern light hotel room"
+        width="123"
+        height="123"
+      />
+      <img
+        class="gallery-block__image gallery-block__image-center"
+        srcset="/bank-hotel/assets/image-gallery-1-3c1c7126.jpg 1x, /bank-hotel/assets/image-gallery-1@2x-2fa0becc.jpg 2x"
+        src="/bank-hotel/assets/image-gallery-1-3c1c7126.jpg"
+        alt="A modern light hotel room"
+        width="192"
+        height="250"
+      />
+    </div>
+    <div class="gallery-block__wrapper">
+      <button class="gallery-block__button" type="button">
+        <svg class="gallery-block__button_icon" width="36" height="36">
+          <use href="/bank-hotel/assets/icons-99ef125f.svg#icon-yellow-circle"></use>
+        </svg>
+      </button>
+      <p class="gallery-block__subject">
+        It is our pleasure to meet your<br />most unrealistic expectations.
+      </p>
+    </div>
+  </div>
+</section>
+
     </main>
-    
+    <footer class="footer">
+  <div class="container">
+    <address class="footer__contacts">
+      <ul class="footer__list">
+        <li class="footer__item footer__item_phone">
+          <a class="footer__link" href="tel:+380322975020">+38 032 297 50 20</a>
+        </li>
+        <li class="footer__item footer__item_address">
+          <!-- href="mailto:info@devstudio.com" -->
+          <!-- ? add Google Maps -->
+          <a class="footer__link">8 Lystopadovoho<br />Chynu, Lviv</a>
+        </li>
+      </ul>
+    </address>
+    <div class="footer__title-wrapper">
+      <h2 class="footer__title-two">
+        Get in<br /><span class="footer__title-two_second-row">Touch</span>
+      </h2>
+      <svg class="footer__icon" width="36" height="36">
+        <use href="/bank-hotel/assets/icons-99ef125f.svg#icon-star-footer"></use>
+      </svg>
+      <img
+        class="footer__image"
+        srcset="/bank-hotel/assets/image-connection-66355957.jpg 1x, /bank-hotel/assets/image-connection@2x-c111fed4.jpg 2x"
+        src="/bank-hotel/assets/image-connection-66355957.jpg"
+        alt="A modern light hotel room"
+        width="150"
+        height="150"
+      />
+    </div>
+    <button class="footer__button" type="button">
+      <svg class="footer__button_icon" width="120" height="120">
+        <use href="/bank-hotel/assets/icons-99ef125f.svg#icon-yellow-circle"></use>
+      </svg>
+      <p class="footer__button_text button_text">Book room</p>
+    </button>
+    <div class="footer__dark-vector dark-vector"></div>
+    <p class="footer__subject">©2021 All rights reserved. BankHotel</p>
+  </div>
+</footer>
+
     <!-- ENOENT: no such file or directory, open '/home/runner/work/bank-hotel/bank-hotel/src/partials/btn-to-top.html' -->
 
     <!-- MODAL MENU CDN SCRIPTS -->
