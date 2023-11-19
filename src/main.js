@@ -1,4 +1,4 @@
-import './css/style.scss';
+import './scss/styles.scss';
 
 import './js/mobile-menu.js';
 // import './js/header.js';

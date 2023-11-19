@@ -14,7 +14,7 @@
     "sass": "^1.69.5",
     "vite": "^4.0.5"
   },
-  "author": "Anna Fedorova <ann.petrovaka94@gmail.com>",
+  "author": "Anna Fedorova <ann.petrovska94@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "modern-normalize": "^2.0.0",

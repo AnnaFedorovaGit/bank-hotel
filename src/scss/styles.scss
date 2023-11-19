@@ -1,0 +1,125 @@
+@import url('./reset.scss');
+
+@import url('./header.scss');
+@import url('./top-block.scss');
+@import url('./about-block.scss');
+@import url('./rooms-block.scss');
+@import url('./facilities-block.scss');
+@import url('./apartments-block.scss');
+@import url('./gallery-block.scss');
+@import url('./footer.scss');
+
+:root {
+    --primary-dark-color: #1b3b36;
+    --secondary-dark-color: #313f38;
+    --secondary-green-color: #495754;
+    --primary-light-color: #fffcf6;
+    --primary-gray-color: #d6d6d0;
+    --secondary-gray-color: #9da19b;
+    --yellow-color: #fcd043;
+}
+
+/* font-family: 'Nunito Sans', sans-serif;
+font-family: 'Yeseva One', serif; */
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    /* check font-size: 14px; */
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--primary-light-color);
+    background-color: var(--primary-light-color);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* .section {
+  padding-top: 70px;
+} */
+
+.container {
+    width: 100%;
+    padding: 0 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 375px) and (max-width: 1023px) {
+    .container {
+        width: 355px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1919px) {
+    .container {
+        /* width: 984px; */
+        width: 1024px;
+        padding: 0 20px;
+    }
+}
+
+/* @media (min-width: 1440px) and (max-width: 1919px) {
+  .container {
+    width: 1400px;
+    padding: 0 20px;
+  }
+} */
+
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1860px;
+        padding: 0 30px;
+    }
+}
+
+h2 {
+    font-family: 'Yeseva One', serif;
+    font-size: 41px;
+    /*  */
+    line-height: 125%;
+    text-transform: uppercase;
+}
+
+@media (min-width: 375px) and (max-width: 1023px) {
+    h2 {
+        font-size: 48px;
+    }
+}
+
+h3 {
+    font-family: 'Yeseva One', serif;
+    font-size: 28px;
+    /*  */
+    line-height: 30px;
+    text-transform: capitalize;
+}
+
+.button {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+}
+
+.button_text {
+    position: absolute;
+    right: 25px;
+    bottom: 53px;
+    color: var(--primary-dark-color);
+    font-style: italic;
+}
+
+.dark-vector {
+    height: 1px;
+    background-color: var(--secondary-dark-color);
+    opacity: 0.24;
+}
