@@ -1,36 +1,95 @@
 <section class="top-block">
   <div class="container">
-    <h1 class="top-block__title">
-      Bank<span class="top-block__title_yellow">Hotel</span>
-    </h1>
-    <p class="top-block__list">
-      rooms // restaurant // congress hall // wine bar
-    </p>
-    <div class="top-block__vector-wrapper">
-      <div class="top-block__vector"></div>
-    </div>
-    <p class="top-block__description">
-      The luxurious hotel in the most beautiful European city with an exclusive
-      restaurant, conference-hall, and art-bar.
-    </p>
-    <div class="top-block__image-wrapper">
-      <img
-        class="top-block__image"
-        srcset="./img/image-top.jpg 1x, ./img/image-top@2x.jpg 2x"
-        src="./img/image-top.jpg"
-        alt="A modern light hotel room"
-        width="355"
-        height="425"
-      />
-      <button class="button" type="button">
-        <svg class="top-block__button_icon" width="120" height="120">
-          <use href="./img/icons.svg#icon-yellow-circle"></use>
+    <div class="top-block__box">
+      <div class="top-block__title-wrapper">
+        <h1 class="top-block__title">
+          Bank<span class="top-block__title_yellow">Hotel</span>
+        </h1>
+        <p class="top-block__list">
+          rooms // restaurant // congress hall // wine bar
+        </p>
+      </div>
+      <button class="top-block__button" type="button">
+        <svg class="top-block__button_icon" width="45" height="45">
+          <use href="./img/icons.svg#icon-button-default-yellow"></use>
         </svg>
         <p class="button_text">Book room</p>
+      </button>
+      <div class="top-block__vector-wrapper">
+        <div class="top-block__vector"></div>
+      </div>
+      <p class="top-block__description">
+        The luxurious hotel in the most beautiful European city with an
+        exclusive restaurant, conference-hall, and art-bar.
+      </p>
+    </div>
+    <div class="top-block__image-wrapper">
+      <!--  -->
+      <picture>
+        <!-- 
+          <source
+            media="(min-width: 1920px)"
+            srcset="
+              ./img/about/yaht1-desktop@1x.png 1x,
+              ./img/about/yaht1-desktop@2x.png 2x
+            "
+            type="image/jpg"
+          /> -->
+        <source
+          media="(min-width: 1024px)"
+          srcset="
+            ./img/image-top-tablet.jpg    1x,
+            ./img/image-top-tablet@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+        <source
+          srcset="./img/image-top.jpg 1x, ./img/image-top@2x.jpg 2x"
+          type="image/jpg"
+        />
+        <img
+          class="top-block__image"
+          src="./img/image-top.jpg"
+          alt="A modern light hotel room"
+          loading="lazy"
+          width="355"
+          height="425"
+        />
+      </picture>
+      <button class="top-block__button-booking button" type="button">
+        <svg class="top-block__button_booking-icon" width="120" height="120">
+          <use href="./img/icons.svg#icon-yellow-circle"></use>
+        </svg>
+        <p class="top-block__button-booking-text button_text">Book room</p>
       </button>
     </div>
     <p class="top-block__text">
       Art & Congress<br /><span class="top-block__text-italic">hall</span>
     </p>
+    <div class="top-block__contacts-wrapper">
+      <address class="top-block__contacts">
+        <ul class="top-block__list">
+          <li class="top-block__item">
+            <a
+              class="top-block__link top-block__link_phone"
+              href="tel:+380322975020"
+              >+38 032 297 50 20</a
+            >
+          </li>
+          <li class="top-block__item">
+            <!-- href="mailto:info@devstudio.com" -->
+            <!-- ? add Google Maps -->
+            <a class="top-block__link top-block__link_address"
+              >8 Lystopadovoho Chynu, Lviv</a
+            >
+          </li>
+        </ul>
+      </address>
+      <p class="top-block__text-tablet">
+        Art & Congress<br /><span class="top-block__text-italic-tablet"
+          >hall</span
+        >
+      </p>
+    </div>
   </div>
 </section>

@@ -18,10 +18,34 @@
   padding-bottom: 40px;
 }
 
+@media (min-width: 1024px) {
+  .top-block {
+    padding-bottom: 35px;
+  }
+
+  .top-block__box {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 40px 0;
+  }
+}
+
+.top-block__title-wrapper {
+  padding: 24px 0 24px 0;
+}
+
+@media (min-width: 1024px) {
+  .top-block__title-wrapper {
+    padding: 0;
+  }
+}
+
 .top-block__title {
   text-align: center;
   font-family: 'Yeseva One', serif;
   font-size: 50px;
+  line-height: 75%;
+  margin-bottom: 24px;
 }
 
 .top-block__title_yellow {
@@ -31,6 +55,13 @@
 @media (min-width: 375px) {
   .top-block__title {
     font-size: 63px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .top-block__title {
+    font-size: 105px;
   }
 }
 
@@ -39,7 +70,31 @@
   text-align: center;
   font-size: 12px;
   text-transform: uppercase;
-  margin: 24px 0 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 1024px) {
+  .top-block__list {
+    font-size: 14px;
+    text-align: left;
+    color: inherit;
+  }
+}
+
+.top-block__button {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .top-block__button {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    height: 45px;
+  }
 }
 
 .top-block__vector-wrapper {
@@ -47,6 +102,12 @@
   width: 173px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 1024px) {
+  .top-block__vector-wrapper {
+    display: none;
+  }
 }
 
 .top-block__vector {
@@ -63,14 +124,51 @@
   line-height: 170%;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 375px) and (max-width: 1023px) {
   .top-block__description {
     width: 291px;
   }
 }
 
+@media (min-width: 1024px) {
+  .top-block__description {
+    width: 200px;
+    margin: 0 30px 0 0;
+    text-align: left;
+  }
+}
+
 .top-block__image-wrapper {
   position: relative;
+}
+
+@media (min-width: 1024px) {
+  .top-block__image {
+    width: 100%;
+    height: 487px;
+  }
+
+  .top-block__button-booking.button {
+    width: 248px;
+    height: 100px;
+    bottom: 0;
+    right: 0;
+    background-color: var(--yellow-color);
+    border-radius: 0;
+  }
+
+  .top-block__button_booking-icon {
+    display: none;
+  }
+
+  .top-block__button-booking-text.button_text {
+    right: 73px;
+    bottom: 41px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
 }
 
 .top-block__text,
@@ -83,4 +181,46 @@
 
 .top-block__text-italic {
   font-style: italic;
+}
+
+@media (min-width: 1024px) {
+  .top-block__text {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .top-block__contacts-wrapper {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .top-block__contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  .top-block__link {
+    font-size: 18px;
+    font-style: normal;
+    /* font-weight: 400;
+    line-height: normal; */
+    text-transform: uppercase;
+  }
+
+  .top-block__link_phone {
+    color: var(--yellow-color);
+  }
+
+  .top-block__text-tablet {
+    font-size: 16px;
+    text-align: right;
+    text-transform: uppercase;
+  }
+
+  .top-block__text-italic-tablet {
+    font-style: italic;
+  }
 }

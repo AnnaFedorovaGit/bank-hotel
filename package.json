@@ -5,11 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "vite",
     "build": "vite build --base=/bank-hotel/",
     "preview": "vite preview"
   },
   "devDependencies": {
     "glob": "^8.1.0",
+    "sass": "^1.69.5",
     "vite": "^4.0.5"
   },
   "author": "Anna Fedorova <ann.petrovaka94@gmail.com>",

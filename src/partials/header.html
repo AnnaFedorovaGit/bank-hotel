@@ -4,14 +4,8 @@
       <a class="header__logo" href="./index.html">BankHotel</a>
       <!-- Mobile button: -->
       <div class="header__mobile-menu">
-        <!-- <button
-          class="header__button-menu"
-          aria-expanded="false"
-          type="button"
-          aria-controls="mobile-menu"
-        > -->
         <button
-          class="header__button"
+          class="header__button js-open-menu"
           aria-expanded="false"
           type="button"
           aria-controls="mobile-menu"
@@ -68,3 +62,85 @@
     </nav>
   </div>
 </header>
+
+<!-- MOBILE MENU: -->
+
+<div class="header__mob-menu_container js-menu-container" id="mobile-menu">
+  <div class="header__mob-menu_wrapper">
+    <div class="header__mob-menu_top-wrapper">
+      <a class="header__mob-menu_logo" href="./index.html">BankHotel</a>
+      <button class="header__mob-menu_button js-close-menu" type="button">
+        <svg class="header__mob-menu_icon" width="25" height="25">
+          <use href="./img/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+    <ul class="header__mob-menu_pag_list">
+      <li class="header__mob-menu_pag_item">
+        <!-- header__mob-menu_pag_link-active -->
+        <a
+          class="header__mob-menu_pag_link header__mob-menu_pag_link-active"
+          href="./index.html"
+          >Home</a
+        >
+        <svg class="header__mob-menu_pag_icon" width="50" height="50">
+          <use href="./img/icons.svg#icon-star"></use>
+        </svg>
+      </li>
+      <li class="header__mob-menu_pag_item">
+        <a class="header__mob-menu_pag_link" href="">About</a>
+      </li>
+      <li class="header__mob-menu_pag_item">
+        <a class="header__mob-menu_pag_link" href="">Rooms</a>
+      </li>
+      <li class="header__mob-menu_pag_item">
+        <a class="header__mob-menu_pag_link" href="">Restaurant</a>
+      </li>
+      <li class="header__mob-menu_pag_item">
+        <a class="header__mob-menu_pag_link" href="">Conference hall</a>
+      </li>
+      <li class="header__mob-menu_pag_item">
+        <a class="header__mob-menu_pag_link" href="">Contacts</a>
+      </li>
+    </ul>
+    <address class="header__mob-menu_contacts">
+      <ul class="header__mob-menu_contacts_list">
+        <li class="header__mob-menu_contacts_item">
+          <a class="header__mob-menu_contacts_link" href="tel:+380322975020"
+            >+38 032 297 50 20</a
+          >
+        </li>
+        <li class="header__mob-menu_contacts_item">
+          <a class="header__mob-menu_contacts_link"
+            >8 Lystopadovoho Chynu, Lviv</a
+          >
+        </li>
+        <li class="header__mob-menu_contacts_item">
+          <ul class="header__mob-menu_links_list">
+            <li class="header__mob-menu_links_item">
+              <a class="header__mob-menu_links_link" href="">
+                <svg class="header__mob-menu_links_icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__mob-menu_links_item">
+              <a class="header__mob-menu_links_link" href="">
+                <svg class="header__mob-menu_links_icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__mob-menu_links_item">
+              <a class="header__mob-menu_links_link" href="">
+                <svg class="header__mob-menu_links_icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </address>
+  </div>
+</div>
