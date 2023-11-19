@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/bank-hotel/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/bank-hotel/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bank hotel</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&family=Yeseva+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,700;1,6..12,400;1,6..12,700&family=Yeseva+One&display=swap"
       rel="stylesheet"
     />
     <link
@@ -17,7 +17,7 @@
     />
     
     <script type="module" crossorigin src="/bank-hotel/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/bank-hotel/assets/index-c62d8b08.css">
+    <link rel="stylesheet" href="/bank-hotel/assets/index-a7ac5a53.css">
   </head>
   <body>
     <header class="header">
@@ -26,20 +26,14 @@
       <a class="header__logo" href="./index.html">BankHotel</a>
       <!-- Mobile button: -->
       <div class="header__mobile-menu">
-        <!-- <button
-          class="header__button-menu"
-          aria-expanded="false"
-          type="button"
-          aria-controls="mobile-menu"
-        > -->
         <button
-          class="header__button"
+          class="header__button js-open-menu"
           aria-expanded="false"
           type="button"
           aria-controls="mobile-menu"
         >
           <svg class="header__icon" width="37" height="10">
-            <use href="/bank-hotel/assets/icons-99ef125f.svg#icon-burger"></use>
+            <use href="/bank-hotel/assets/icons-d1cd3348.svg#icon-burger"></use>
           </svg>
         </button>
       </div>
@@ -91,41 +85,179 @@
   </div>
 </header>
 
+<!-- MOBILE MENU: -->
+
+<div class="header__mob-menu_container js-menu-container" id="mobile-menu">
+  <div class="header__mob-menu_wrapper">
+    <div class="header__mob-menu_top-wrapper">
+      <a class="header__mob-menu_logo" href="./index.html">BankHotel</a>
+      <button class="header__mob-menu_button js-close-menu" type="button">
+        <svg class="header__mob-menu_icon" width="25" height="25">
+          <use href="/bank-hotel/assets/icons-d1cd3348.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+    <ul class="header__mob-menu_pag_list">
+      <li class="header__mob-menu_pag_item">
+        <!-- header__mob-menu_pag_link-active -->
+        <a
+          class="header__mob-menu_pag_link header__mob-menu_pag_link-active"
+          href="./index.html"
+          >Home</a
+        >
+        <svg class="header__mob-menu_pag_icon" width="50" height="50">
+          <use href="/bank-hotel/assets/icons-d1cd3348.svg#icon-star"></use>
+        </svg>
+      </li>
+      <li class="header__mob-menu_pag_item">
+        <a class="header__mob-menu_pag_link" href="">About</a>
+      </li>
+      <li class="header__mob-menu_pag_item">
+        <a class="header__mob-menu_pag_link" href="">Rooms</a>
+      </li>
+      <li class="header__mob-menu_pag_item">
+        <a class="header__mob-menu_pag_link" href="">Restaurant</a>
+      </li>
+      <li class="header__mob-menu_pag_item">
+        <a class="header__mob-menu_pag_link" href="">Conference hall</a>
+      </li>
+      <li class="header__mob-menu_pag_item">
+        <a class="header__mob-menu_pag_link" href="">Contacts</a>
+      </li>
+    </ul>
+    <address class="header__mob-menu_contacts">
+      <ul class="header__mob-menu_contacts_list">
+        <li class="header__mob-menu_contacts_item">
+          <a class="header__mob-menu_contacts_link" href="tel:+380322975020"
+            >+38 032 297 50 20</a
+          >
+        </li>
+        <li class="header__mob-menu_contacts_item">
+          <a class="header__mob-menu_contacts_link"
+            >8 Lystopadovoho Chynu, Lviv</a
+          >
+        </li>
+        <li class="header__mob-menu_contacts_item">
+          <ul class="header__mob-menu_links_list">
+            <li class="header__mob-menu_links_item">
+              <a class="header__mob-menu_links_link" href="">
+                <svg class="header__mob-menu_links_icon" width="20" height="20">
+                  <use href="/bank-hotel/assets/icons-d1cd3348.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__mob-menu_links_item">
+              <a class="header__mob-menu_links_link" href="">
+                <svg class="header__mob-menu_links_icon" width="20" height="20">
+                  <use href="/bank-hotel/assets/icons-d1cd3348.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__mob-menu_links_item">
+              <a class="header__mob-menu_links_link" href="">
+                <svg class="header__mob-menu_links_icon" width="20" height="20">
+                  <use href="/bank-hotel/assets/icons-d1cd3348.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </address>
+  </div>
+</div>
+
     <main>
       <section class="top-block">
   <div class="container">
-    <h1 class="top-block__title">
-      Bank<span class="top-block__title_yellow">Hotel</span>
-    </h1>
-    <p class="top-block__list">
-      rooms // restaurant // congress hall // wine bar
-    </p>
-    <div class="top-block__vector-wrapper">
-      <div class="top-block__vector"></div>
-    </div>
-    <p class="top-block__description">
-      The luxurious hotel in the most beautiful European city with an exclusive
-      restaurant, conference-hall, and art-bar.
-    </p>
-    <div class="top-block__image-wrapper">
-      <img
-        class="top-block__image"
-        srcset="/bank-hotel/assets/image-top-b2b2c0d3.jpg 1x, /bank-hotel/assets/image-top@2x-8dd01fca.jpg 2x"
-        src="/bank-hotel/assets/image-top-b2b2c0d3.jpg"
-        alt="A modern light hotel room"
-        width="355"
-        height="425"
-      />
-      <button class="button" type="button">
-        <svg class="top-block__button_icon" width="120" height="120">
-          <use href="/bank-hotel/assets/icons-99ef125f.svg#icon-yellow-circle"></use>
+    <div class="top-block__box">
+      <div class="top-block__title-wrapper">
+        <h1 class="top-block__title">
+          Bank<span class="top-block__title_yellow">Hotel</span>
+        </h1>
+        <p class="top-block__list">
+          rooms // restaurant // congress hall // wine bar
+        </p>
+      </div>
+      <button class="top-block__button" type="button">
+        <svg class="top-block__button_icon" width="45" height="45">
+          <use href="/bank-hotel/assets/icons-d1cd3348.svg#icon-button-default-yellow"></use>
         </svg>
         <p class="button_text">Book room</p>
+      </button>
+      <div class="top-block__vector-wrapper">
+        <div class="top-block__vector"></div>
+      </div>
+      <p class="top-block__description">
+        The luxurious hotel in the most beautiful European city with an
+        exclusive restaurant, conference-hall, and art-bar.
+      </p>
+    </div>
+    <div class="top-block__image-wrapper">
+      <!--  -->
+      <picture>
+        <!-- 
+          <source
+            media="(min-width: 1920px)"
+            srcset="
+              ./img/about/yaht1-desktop@1x.png 1x,
+              ./img/about/yaht1-desktop@2x.png 2x
+            "
+            type="image/jpg"
+          /> -->
+        <source
+          media="(min-width: 1024px)"
+          srcset="/bank-hotel/assets/image-top-tablet-3323302a.jpg 1x, /bank-hotel/assets/image-top-tablet@2x-7ac1d4df.jpg 2x"
+          type="image/jpg"
+        />
+        <source
+          srcset="/bank-hotel/assets/image-top-b2b2c0d3.jpg 1x, /bank-hotel/assets/image-top@2x-8dd01fca.jpg 2x"
+          type="image/jpg"
+        />
+        <img
+          class="top-block__image"
+          src="/bank-hotel/assets/image-top-b2b2c0d3.jpg"
+          alt="A modern light hotel room"
+          loading="lazy"
+          width="355"
+          height="425"
+        />
+      </picture>
+      <button class="top-block__button-booking button" type="button">
+        <svg class="top-block__button_booking-icon" width="120" height="120">
+          <use href="/bank-hotel/assets/icons-d1cd3348.svg#icon-yellow-circle"></use>
+        </svg>
+        <p class="top-block__button-booking-text button_text">Book room</p>
       </button>
     </div>
     <p class="top-block__text">
       Art & Congress<br /><span class="top-block__text-italic">hall</span>
     </p>
+    <div class="top-block__contacts-wrapper">
+      <address class="top-block__contacts">
+        <ul class="top-block__list">
+          <li class="top-block__item">
+            <a
+              class="top-block__link top-block__link_phone"
+              href="tel:+380322975020"
+              >+38 032 297 50 20</a
+            >
+          </li>
+          <li class="top-block__item">
+            <!-- href="mailto:info@devstudio.com" -->
+            <!-- ? add Google Maps -->
+            <a class="top-block__link top-block__link_address"
+              >8 Lystopadovoho Chynu, Lviv</a
+            >
+          </li>
+        </ul>
+      </address>
+      <p class="top-block__text-tablet">
+        Art & Congress<br /><span class="top-block__text-italic-tablet"
+          >hall</span
+        >
+      </p>
+    </div>
   </div>
 </section>
 
@@ -151,7 +283,7 @@
     <div class="about-block__wrapper">
       <h3 class="about-block__title-three">High Quality</h3>
       <svg class="about-block__icon" width="70" height="50">
-        <use href="/bank-hotel/assets/icons-99ef125f.svg#icon-label"></use>
+        <use href="/bank-hotel/assets/icons-d1cd3348.svg#icon-label"></use>
       </svg>
       <p class="about-block__text">
         The hotel was reopened to visitors in 2016. The building was renovated
@@ -182,7 +314,7 @@
       />
       <button class="button" type="button">
         <svg class="rooms-block__button_icon" width="120" height="120">
-          <use href="/bank-hotel/assets/icons-99ef125f.svg#icon-yellow-circle"></use>
+          <use href="/bank-hotel/assets/icons-d1cd3348.svg#icon-yellow-circle"></use>
         </svg>
         <p class="button_text">Book room</p>
       </button>
@@ -193,7 +325,7 @@
       <div class="rooms-block__slider_wrapper">
         <button class="rooms-block__slider_control" type="button">
           <svg class="rooms-block__slider_icon" width="70" height="70">
-            <use href="/bank-hotel/assets/icons-99ef125f.svg#icon-button-default"></use>
+            <use href="/bank-hotel/assets/icons-d1cd3348.svg#icon-button-default"></use>
           </svg>
         </button>
         <p class="rooms-block__text">
@@ -219,7 +351,7 @@
         >
       </h2>
       <svg class="facilities-block__icon" width="50" height="50">
-        <use href="/bank-hotel/assets/icons-99ef125f.svg#icon-star"></use>
+        <use href="/bank-hotel/assets/icons-d1cd3348.svg#icon-star"></use>
       </svg>
     </div>
     <div class="facilities-block__picture-wrapper">
@@ -259,7 +391,7 @@
             </p>
             <button class="facilities-block__control" type="button">
               <svg class="facilities-block__icon-button" width="70" height="70">
-                <use href="/bank-hotel/assets/icons-99ef125f.svg#icon-button-default"></use>
+                <use href="/bank-hotel/assets/icons-d1cd3348.svg#icon-button-default"></use>
               </svg>
             </button>
           </div>
@@ -340,7 +472,7 @@
   <div class="container">
     <div class="gallery-block__title-wrapper">
       <svg class="gallery-block__icon" width="70" height="50">
-        <use href="/bank-hotel/assets/icons-99ef125f.svg#icon-label"></use>
+        <use href="/bank-hotel/assets/icons-d1cd3348.svg#icon-label"></use>
       </svg>
       <h2 class="gallery-block__title-two">our<br />Gallery</h2>
     </div>
@@ -396,7 +528,7 @@
     <div class="gallery-block__wrapper">
       <button class="gallery-block__button" type="button">
         <svg class="gallery-block__button_icon" width="36" height="36">
-          <use href="/bank-hotel/assets/icons-99ef125f.svg#icon-yellow-circle"></use>
+          <use href="/bank-hotel/assets/icons-d1cd3348.svg#icon-yellow-circle"></use>
         </svg>
       </button>
       <p class="gallery-block__subject">
@@ -426,7 +558,7 @@
         Get in<br /><span class="footer__title-two_second-row">Touch</span>
       </h2>
       <svg class="footer__icon" width="36" height="36">
-        <use href="/bank-hotel/assets/icons-99ef125f.svg#icon-star-footer"></use>
+        <use href="/bank-hotel/assets/icons-d1cd3348.svg#icon-star-footer"></use>
       </svg>
       <img
         class="footer__image"
@@ -439,7 +571,7 @@
     </div>
     <button class="footer__button" type="button">
       <svg class="footer__button_icon" width="120" height="120">
-        <use href="/bank-hotel/assets/icons-99ef125f.svg#icon-yellow-circle"></use>
+        <use href="/bank-hotel/assets/icons-d1cd3348.svg#icon-yellow-circle"></use>
       </svg>
       <p class="footer__button_text button_text">Book room</p>
     </button>
@@ -447,27 +579,6 @@
     <p class="footer__subject">©2021 All rights reserved. BankHotel</p>
   </div>
 </footer>
-
-    <!-- ENOENT: no such file or directory, open '/home/runner/work/bank-hotel/bank-hotel/src/partials/btn-to-top.html' -->
-
-    <!-- MODAL MENU CDN SCRIPTS -->
-    <!-- <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script> -->
-    <!-- 3d card js -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script> -->
-
-    <!-- <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-            Path to images as from index.html file
-      <img src="./img/javascript.svg" alt="" />
-    </section> -->
-
-    <!-- Loads the specified .html file -->
-    <!-- ENOENT: no such file or directory, open '/home/runner/work/bank-hotel/bank-hotel/src/partials/vite-promo.html' -->
 
     
   </body>
